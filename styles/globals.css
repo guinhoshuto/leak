@@ -40,6 +40,11 @@
   --card-border-rgb: 131, 134, 135;
 }
 
+h1{
+  color: #FFFFFF;
+  font-family: sans-serif;  
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
