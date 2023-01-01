@@ -12,7 +12,6 @@ export default function Home() {
         LEAKS
       </h1>
 
-      <Drops.BeepBeep />
     </>
   )
 }
