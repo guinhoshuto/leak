@@ -1,0 +1,12 @@
+.container{ 
+    display: flex;
+    flex-direction: row;
+}
+
+.menu{
+    flex-shrink: 3;
+}
+
+.main{ 
+    flex-shrink: 1;
+}
