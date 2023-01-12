@@ -13,6 +13,10 @@ export default function Layout({children}: any){
         {
             href: '/teste',
             title: 'teste'
+        },
+        {
+            href: '/obs-effect',
+            title: 'observer effect'
         }
     ]
 
