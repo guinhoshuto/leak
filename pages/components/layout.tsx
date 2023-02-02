@@ -17,7 +17,11 @@ export default function Layout({children}: any){
         {
             href: '/obs-effect',
             title: 'observer effect'
-        }
+        },
+        {
+            href: '/circulating',
+            title: 'circulating'
+        },
     ]
 
     return(
