@@ -19,6 +19,10 @@ export default function Layout({children}: any){
             title: 'observer effect'
         },
         {
+            href: '/mermaid',
+            title: 'mermaid'
+        },
+        {
             href: '/circulating',
             title: 'circulating'
         },

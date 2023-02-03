@@ -17,18 +17,21 @@ export default function Mermaid() {
         const context = canvas.getContext('2d')
         if(!context) return;
 
+        let a = 0
+        if(hmm){
+            a = 1
+        }
+
         context.fillStyle = 'black'
-        for(let i = 0; i <= 3; i++){
-            for(let j = 0; j <= 3; j++){
-                // let color =  `rgba(${25*(i+j) + a*5}, ${10*(j+i) + a*5}, ${35*(i+j) + a*5}, ${i+j})`
-                for(let k = 0; k <= 7; k++){
-                    context.beginPath()
-                    context.arc(275-k*25+j*100, 275-k*25+i*100, 70, 0, Math.PI*2)
-                    context.fillStyle = `rgb(${135+k*20}, 0, 0)`
-                    context.fill()
-                    context.strokeStyle = 'white'
-                    context.stroke()
-                }
+        for(let i = 0; i <= 6; i++){
+            for(let j = 0; j <= 6; j++){
+                let color =  `rgba(${25*(i+j) + a*5}, ${10*(j+i) + a*5}, ${35*(i+j) + a*5}, ${i+j})`
+                context.beginPath()
+                context.arc(75+j*100, 75+i*100, 75, 0, Math.PI*2)
+                context.fillStyle = color
+                context.fill()
+                context.strokeStyle = color
+                context.stroke()
             }
         }
 
@@ -41,7 +44,7 @@ export default function Mermaid() {
     }, 5000)
 
     return(
-        <div className="container">
+        <div>
             <div>
                 <canvas ref={canvasRef} width="800" height="800" />
             </div>
