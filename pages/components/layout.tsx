@@ -26,6 +26,10 @@ export default function Layout({children}: any){
             href: '/circulating',
             title: 'circulating'
         },
+        {
+            href: '/stacks',
+            title: 'stacks'
+        },
     ]
 
     return(
