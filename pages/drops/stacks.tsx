@@ -41,11 +41,10 @@ export default function Stacks() {
     }, 5000)
 
     return(
-        <div className="container">
+        <div>
             <div>
-                <canvas ref={canvasRef} width="800" height="800" />
+                <canvas ref={canvasRef} width="1000" height="1000" />
             </div>
-            <p>ref: https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/arc</p>
         </div>
     )
 }

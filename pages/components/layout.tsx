@@ -11,10 +11,6 @@ export default function Layout({children}: any){
             title: 'beep beep'
         },
         {
-            href: '/teste',
-            title: 'teste'
-        },
-        {
             href: '/obs-effect',
             title: 'observer effect'
         },
