@@ -30,6 +30,10 @@ export default function Layout({children}: any){
             href: '/bauhaus',
             title: 'bauhaus'
         },
+        {
+            href: '/halftone',
+            title: 'halftone'
+        },
     ]
 
     return(

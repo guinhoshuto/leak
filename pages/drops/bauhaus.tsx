@@ -13,6 +13,7 @@ export default function BeepBeep() {
 
         const context = canvas.getContext('2d')
         if(!context) return;
+        context.clearRect(0, 0, canvas.width, canvas.height);
 
         context.fillStyle = 'white'
 
@@ -35,33 +36,36 @@ export default function BeepBeep() {
 
         function drawCircle(ctx: any, possibleCircle: any, x: number, y: number){
             ctx.arc(x + possibleCircle.x, y + possibleCircle.y, possibleCircle.raio, possibleCircle.ini, possibleCircle.fim)
+            ctx.lineTo(x + possibleCircle.x, y + possibleCircle.y)
         }
 
         for(let i = 0; i < 4; i++){
             for(let j = 0; j < 7; j++){
                 let color = Math.floor(Math.random()*4)
                 let circle = Math.floor(Math.random()*5)
-                let gap = 5;
+                let gap = 0;
                 let x = 100 + (gap + r)*i;
                 let y = 100 + (gap + r)*j;
 
                 let c = Math.round(Math.random())
                 context.beginPath()
+                // context.moveTo(x, y)
                 context.fillStyle = colors[color]
                 // context.arc(x, y, 25, 0, 2*Math.PI)
                 drawCircle(context, possibleCircles[circle], x, y)
                 context.fill()
                 context.closePath()
+                context.fillStyle = "#FFFFFF"
                 // context.fillRect(x, y, w, h)
             }
         }
         //END
 
-    }, [])
+    }, [hmm])
 
     setInterval(() => {
         setHmm(!hmm)
-    }, 1000)
+    }, 2000)
 
     return(
         <div>
