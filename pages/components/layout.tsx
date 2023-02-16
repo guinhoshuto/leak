@@ -26,6 +26,10 @@ export default function Layout({children}: any){
             href: '/stacks',
             title: 'stacks'
         },
+        {
+            href: '/bauhaus',
+            title: 'bauhaus'
+        },
     ]
 
     return(
