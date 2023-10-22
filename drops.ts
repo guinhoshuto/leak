@@ -27,11 +27,9 @@ export const drops = [
         href: 'halftone',
         title: 'halftone'
     },
+    {
+        href: '100DaysOfCode',
+        title: '#100DaysOfCode'
+    },
 ];
 
-export const daysOfCode = [
-    {
-        href: '1-a',
-        title: '1 - a'
-    }
-]
